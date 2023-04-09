@@ -26,6 +26,6 @@
 
 Сценарии взаимодействия с системой отправлены вместе с сообщением ментору трека, а также находятся в корне данного репозитория (Scenario.txt)
 
-Ссылка на демостенд: http://rlt.hack.portfolio.schooltech.ru/docs/web
+Ссылка на демостенд: http://rlt.hack.portfolio.schooltech.ru
 
-Ссылка на презентацию: https://gamma.app/docs/-Fun-rceni3lhyggp3ad?mode=doc
+Ссылка на презентацию: https://gamma.app/docs/-Fun-rceni3lhyggp3ad?mode=doc#card-59vor18wgv8lzpb
