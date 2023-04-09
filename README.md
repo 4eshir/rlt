@@ -25,3 +25,7 @@
 - - Пароль: admin
 
 Сценарии взаимодействия с системой отправлены вместе с сообщением ментору трека, а также находятся в корне данного репозитория (Scenario.txt)
+
+Ссылка на демостенд: http://rlt.hack.portfolio.schooltech.ru/docs/web
+
+Ссылка на презентацию: https://gamma.app/docs/-Fun-rceni3lhyggp3ad?mode=doc
