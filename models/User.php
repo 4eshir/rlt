@@ -354,28 +354,28 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         $walletNFT = CurrencyWallet::find()->joinWith(['wallet wallet'])->where(['wallet.user_id' => $this->id])->andWhere(['wallet.type_id' => 1])->andWhere(['currency_id' => 1])->one();
         $walletDig = CurrencyWallet::find()->joinWith(['wallet wallet'])->where(['wallet.user_id' => $this->id])->andWhere(['wallet.type_id' => 1])->andWhere(['currency_id' => 2])->one();
-        return $walletNFT == null ? 'Отсутствует' : 'NFT-сертификаты: '.$walletNFT->count.'<br>Digital Rubles: '.$walletDig->count;
+        return $walletNFT == null ? 'Отсутствует' : 'InGameCur: '.$walletNFT->count.'<br>Rubles: '.$walletDig->count;
     }
 
     public function getWalletVirtual()
     {
         $walletNFT = CurrencyWallet::find()->joinWith(['wallet wallet'])->where(['wallet.user_id' => $this->id])->andWhere(['wallet.type_id' => 2])->andWhere(['currency_id' => 1])->one();
         $walletDig = CurrencyWallet::find()->joinWith(['wallet wallet'])->where(['wallet.user_id' => $this->id])->andWhere(['wallet.type_id' => 2])->andWhere(['currency_id' => 2])->one();
-        return $walletNFT == null ? 'Отсутствует' : 'NFT-сертификаты: '.$walletNFT->count.'<br>Digital Rubles: '.$walletDig->count;
+        return $walletNFT == null ? 'Отсутствует' : 'InGameCur: '.$walletNFT->count.'<br>Rubles: '.$walletDig->count;
     }
 
     public function getPersonalSalary()
     {
         $salaryNFT = UserSalary::find()->where(['user_id' => $this->id])->andWhere(['wallet_type_id' => 1])->andWhere(['currency_id' => 1])->one();
         $salaryDig = UserSalary::find()->where(['user_id' => $this->id])->andWhere(['wallet_type_id' => 1])->andWhere(['currency_id' => 1])->one();
-        return $salaryNFT == null ? 'Отсутствует' : 'NFT-сертификаты: '.$salaryNFT->salary.'<br>Digital Rubles: '.$salaryDig->salary;
+        return $salaryNFT == null ? 'Отсутствует' : 'InGameCur: '.$salaryNFT->salary.'<br>Rubles: '.$salaryDig->salary;
     }
 
     public function getVirtualSalary()
     {
         $salaryNFT = UserSalary::find()->where(['user_id' => $this->id])->andWhere(['wallet_type_id' => 2])->andWhere(['currency_id' => 1])->one();
         $salaryDig = UserSalary::find()->where(['user_id' => $this->id])->andWhere(['wallet_type_id' => 2])->andWhere(['currency_id' => 1])->one();
-        return $salaryNFT == null ? 'Отсутствует' : 'NFT-сертификаты: '.$salaryNFT->salary.'<br>Digital Rubles: '.$salaryDig->salary;
+        return $salaryNFT == null ? 'Отсутствует' : 'InGameCur: '.$salaryNFT->salary.'<br>Rubles: '.$salaryDig->salary;
     }
 
     public function prepare()
