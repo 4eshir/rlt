@@ -24,8 +24,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-        <?= Html::a('Начислить NFT/монеты', ['add-coins', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
-        <?= Html::a('Списать NFT/монеты', ['delete-coins', 'id' => $model->id], ['class' => 'btn btn-warning']) ?>
+        <?= Html::a('Начислить IGC/Rubles', ['add-coins', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Списать IGC/Rubles', ['delete-coins', 'id' => $model->id], ['class' => 'btn btn-warning']) ?>
     </p>
 
     <?= DetailView::widget([
